@@ -1,0 +1,4 @@
+[2026-11-10 12:26:46] Sistema iniciado
+[2026-11-10 12:26:46] ERROR: no se pudo conectar a la base de datos
+[2026-11-10 12:26:46] Usuario Lamine inició sesión
+[2026-11-10 12:26:46] Error al guardar el reporte
