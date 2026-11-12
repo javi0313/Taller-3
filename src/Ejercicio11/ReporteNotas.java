@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ejercicio11;
 
 /**
@@ -47,7 +43,7 @@ public class ReporteNotas {
                             suma += Double.parseDouble(c[i].trim());
                         } catch (NumberFormatException e) {
                             throw new IllegalArgumentException(
-                                    "nota no numérica \"" + c[i] + "\"");
+                                    "nota no numerica \"" + c[i] + "\"");
                         }
                     }
                     double promedio = suma / 3;
@@ -56,7 +52,7 @@ public class ReporteNotas {
                             + String.format(Locale.US, "%.2f", promedio) + "," + estado);
                     procesados++;
                 } catch (IllegalArgumentException e) {
-                    System.out.println("Línea " + numeroLinea + " ignorada: " + e.getMessage());
+                    System.out.println("Linea " + numeroLinea + " ignorada: " + e.getMessage());
                     conError++;
                 }
             }

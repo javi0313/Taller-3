@@ -6,7 +6,7 @@ package Ejercicio4;
 
 /**
  *
- * @author user
+ * @author 
  */
 public class Smartphone extends Dispositivo implements Llamable, Fotografiable {
     private int megapixeles;
@@ -23,7 +23,7 @@ public class Smartphone extends Dispositivo implements Llamable, Fotografiable {
 
     @Override
     public void colgar() {
-        System.out.println(marca + " finalizó la llamada");
+        System.out.println(marca + " finalizo la llamada");
     }
 
     @Override
@@ -32,7 +32,9 @@ public class Smartphone extends Dispositivo implements Llamable, Fotografiable {
     }
 
     @Override
-    public int getMegapixeles() { return megapixeles; }
+    public int getMegapixeles() { 
+        return megapixeles; 
+    }
 
     // Resuelve la ambigüedad entre Llamable y Fotografiable
     @Override

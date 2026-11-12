@@ -29,7 +29,7 @@ public class Bitacora {
 
     public void registrar(String mensaje) throws IOException {
         String linea = "[" + LocalDateTime.now().format(FORMATO) + "] " + mensaje;
-        // true = agregar al final sin borrar lo anterior
+        
         try (PrintWriter pw = new PrintWriter(
                 new FileWriter(ruta, StandardCharsets.UTF_8, true))) {
             pw.println(linea);
